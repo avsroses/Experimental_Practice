@@ -1,8 +1,8 @@
 /*
-  LED
+  MOTOR
 
   This example creates a Bluetooth® Low Energy peripheral with service that contains a
-  characteristic to control an LED.
+  characteristic to control a motor.
 
   The circuit:
   - Arduino MKR WiFi 1010, Arduino Uno WiFi Rev2 board, Arduino Nano 33 IoT,
@@ -15,11 +15,11 @@
   This example code is in the public domain.
 */
 
+
 #include <ArduinoBLE.h>
 
 BLEService motorService("bcd83f84-3f46-41df-b9f9-0d4e6365de5d"); // Bluetooth® Low Energy LED Service
 
-// Bluetooth® Low Energy LED Switch Characteristic - custom 128-bit UUID, read and writable by central
 BLEByteCharacteristic switchCharacteristic("bcd83f84-3f46-41df-b9f9-0d4e6365de5d", BLERead | BLEWrite);
 
 const int motorPin = 13; // pin to use for the MOTOR
@@ -70,12 +70,22 @@ void loop() {
 
     // while the central is still connected to peripheral:
     while (central.connected()) {
-      // if the remote device wrote to the characteristic,
-      // use the value to control the LED:
+
+      // For a button press - on or off
+      /*
+      if(switchCharacteristic.written()){
+        if(switchCharacteristic.value()){
+          analogWrite(motorPin, 255);
+        } else {
+          analogWrite(motorPin, 0);
+        }
+      }
+      */
+
       if (switchCharacteristic.written()) {  
         Serial.println("MOTOR on");
         analogWrite(motorPin, switchCharacteristic.value());   
-      }
+      } 
     }
 
     // when the central disconnects, print it out:
