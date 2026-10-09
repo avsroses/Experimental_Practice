@@ -22,4 +22,4 @@
 
 **Bluetooth_motor_Potentiometer** contains the code for making a motor spin at different speeds based on a potentiometer connected to another Arduino and the two are linked by Bluetooth.    
 
-All the codes that communicate with each other do so by sharing the same UUID number
+All the codes that communicate with each other do so by sharing the same UUID number. This method can be used to have one central Arduino and many peripheral Arduinos, doing different things. 
