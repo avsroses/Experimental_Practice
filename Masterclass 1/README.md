@@ -13,4 +13,5 @@
 
 ## Explanation
 
-The value of the motor speed can written from an app on a phone, or another Arduino, over Bluetooth.   
+The value of the motor speed can be written from an app on a phone, or another Arduino, over Bluetooth.
+ 
