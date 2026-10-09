@@ -13,5 +13,4 @@
 
 ## Explanation
 
-The code uploaded to the Arduino allows for the value of the motor speed to be written from an app on a phone, or another Arduino, over Bluetooth.   
-then
+The value of the motor speed can written from an app on a phone, or another Arduino, over Bluetooth.   
