@@ -28,7 +28,7 @@ void setup() {
   Serial.begin(9600);
   while (!Serial);
 
-  // set LED pin to output mode
+  // set motor pin to output mode
   pinMode(motorPin, OUTPUT);
 
   // begin initialization
@@ -67,18 +67,14 @@ void loop() {
     // print the central's MAC address:
     Serial.println(central.address());
 
+
     // while the central is still connected to peripheral:
     while (central.connected()) {
       // if the remote device wrote to the characteristic,
       // use the value to control the LED:
-      if (switchCharacteristic.written()) {
-        if (switchCharacteristic.value()) {   // any value other than 0
-          Serial.println("MOTOR on");
-          analogWrite(motorPin, 255);         // will turn the LED on
-        } else {                              // a 0 value
-          Serial.println(F("MOTOR off"));
-          analogWrite(motorPin, 0);          // will turn the LED off
-        }
+      if (switchCharacteristic.written()) {  
+        Serial.println("MOTOR on");
+        analogWrite(motorPin, switchCharacteristic.value());   
       }
     }
 
