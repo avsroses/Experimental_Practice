@@ -5,4 +5,5 @@ Experimental work from masterclasses throughout BSc3a
 ### Files:
 - LED example of controlling value of LED from Bluetooth to a phone
 - Bluetooth Motor showing same concept as LED but with a motor
-### Explanation of session:
+
+## Masterclass 2: Web sockets
