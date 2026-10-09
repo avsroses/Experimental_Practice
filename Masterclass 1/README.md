@@ -20,4 +20,6 @@
 
 **Bluetooth_motor_Button_press** contains the code for making a motor spin when a button is pressed. The button is connected to another Arduino and the two are linked by Bluetooth to interact.   
 
-**Bluetooth_motor_Potentiometer** contains the code for making a motor spin at different speeds based on a potentiometer connected to another Arduino and the two are linked by Bluetooth.
+**Bluetooth_motor_Potentiometer** contains the code for making a motor spin at different speeds based on a potentiometer connected to another Arduino and the two are linked by Bluetooth.    
+
+All the codes that communicate with each other do so by sharing the same UUID number
