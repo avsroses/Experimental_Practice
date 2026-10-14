@@ -2,7 +2,7 @@
   MOTOR Control
 
   This example scans for Bluetooth® Low Energy peripherals until one with the advertised service
-  "19b10000-e8f2-537e-4f6c-d104768a1214" UUID is found. Once discovered and connected,
+  "bcd83f84-3f46-41df-b9f9-0d4e6365de5d" UUID is found. Once discovered and connected,
   it will remotely control the Bluetooth® Low Energy peripheral's MOTOR, when the potentiometer is set to different values.
 
   The circuit:
