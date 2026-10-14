@@ -18,7 +18,7 @@
 
 #include <ArduinoBLE.h>
 
-// variables for button
+// variables for potentiometer
 int potPin = A3;
 int potVal = 0;
 
