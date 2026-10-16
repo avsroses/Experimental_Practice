@@ -5,3 +5,4 @@ Experimental work from masterclasses throughout BSc3a
 https://github.com/avsroses/Masterclass1_Arduino-and-Bluetooth.git
 
 ## Masterclass 2: Web sockets
+https://github.com/avsroses/Masterclass2_Websockets.git
