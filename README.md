@@ -6,3 +6,5 @@ https://github.com/avsroses/Masterclass1_Arduino-and-Bluetooth.git
 
 ## Masterclass 2: Web sockets
 https://github.com/avsroses/Masterclass2_Websockets.git
+
+## Masterclass 3:
